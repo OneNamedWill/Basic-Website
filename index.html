@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <meta charset="utf-8">
+    <title>My Website</title>
+    <script src="scripts\autorefresh.js"></script>
+    <link rel="stylesheet" type="text/css" href="stylesheets/styles.css">
+  </head>
+
+  <header>
+    <div id="navbar">
+      <img src="assets\UPELogo.svg" alt="">
+
+      <ul>
+        <li id="menu-items" class="current-page"><a href="index.html">Home</a></li>
+        <li id="menu-items"><a href="pages\About.html">About</a></li>
+        <li id="menu-items"><a href="pages\Images.html">Images</a></li>
+        <li id="menu-items"><a href="pages\Videos.html">Videos</a></li>
+        <li id="menu-items"><a href="pages\Contact.html">Contact</a></li>
+    </ul>
+    </div>
+  </header>
+
+  <body>
+    <div class="Center">
+      <img src="assets\home-background1.jpg" class="header-img" id="image">
+      <script type="text/javascript">
+        var image = document.images[0]
+        var bigimage = documet.createElement("img")
+
+        bigimage.onload = function() {
+          image.src = this.src
+        }
+
+        bigimage.src = "assets/home-background.jpg"
+      </script>
+      <h1 id="centered-title" class="title-box">Top Article</h1>
+    </div>
+
+    <div class="Left" id="top-article-left">
+      <h1>Finland's 40th National Park</h1>
+      <p>To celebrate its centennial of independence, Finland just created its 40th national park.Hossa is a wide swath of pristine land on the eastern edge of the country that features the 4,500-year-old petroglyph paintings on Värikallio rock wall, crystal-clear lakes, and long stretches of trails through pine forests.“Even by Finnish standards, Hossa, situated close to the Russian border in the Kainuu region, is remote. You’re more likely to come across a reindeer than a fellow hiker along most of the 90km of marked trails through pine forest that make up one of the oldest hiking areas in Finland,” says Sarah Gibbons, a BBC Travel writer.The area has a long history of hunting and foraging, so visitors can expect to enjoy these as well as many other activities in Hossa, including backpacking, camping, canoeing, and stand-up paddle-boarding. Of course there are also winter activities for those who love the snow."From September to late May — and particularly so after this year’s harsh winter — Hossa turns into a frozen wilderness, akin to a Narnia snow globe," notes Conde Nast Travel writer Mike MacEacheran. "At this time, Hossa is given over to dog sledding and snowshoeing."Wildlife enthusiasts may have a chance to watch brown bears and wolverines in addition to the many native bird species including eagles and great gray owls.Now that it's a national park, there's even more reason to visit this natural gem and take in the rich history and quiet solitude of this wild place. </p>
+    </div>
+    <div class="Right" id="top-article-img">
+      <img src="assets\top-article.jpg" id="image">
+    </div>
+  </body>
+
+</html>
